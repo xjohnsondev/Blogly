@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>New User</title>
+</head>
+<body>
+    
+
+    <form id="fill-out" action="/" method="POST">
+        <h1>Create a User</h1>
+        <div class="form-group">
+
+        <label for="first-name">First Name</label>
+        <input class="form-control" type="text" name="first_name" placeholder="Enter a first name">
+        </div>
+        <div class="form-group">
+
+        <label for="last-name">Last Name</label>
+        <input class="form-control" type="text" name="last_name" placeholder="Enter a last name">
+        </div>
+        <div class="form-group">
+
+        <label for="image-url">Image URL</label>
+        <input class="form-control" type="text" name="image_url" placeholder="Provide an image of this user">
+        </div>
+
+        <button class="btn btn-light" name="add" value="cancel">Cancel</button>
+        <button class="btn btn-primary" name="add" value="add">Add</button>
+    </form>
+
+</body>
+</html>
