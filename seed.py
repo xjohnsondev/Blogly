@@ -1,4 +1,4 @@
-from models import db, User, Post
+from models import db, User, Post, Tag, PostTag
 from app import app
 
 # Create all tables
@@ -12,12 +12,19 @@ jane = User(first_name="Jane", last_name="Smith", image_url="https://assets.myca
 db.session.add_all([alan,joel,jane])
 db.session.commit()
 
-post1 = Post(title="test1", content="tester", user_id=1)
-post2 = Post(title="test2", content="tester", user_id=1)
-post3 = Post(title="test3", content="tester", user_id=2)
-post4 = Post(title="test4", content="tester", user_id=2)
-post5 = Post(title="test5", content="tester", user_id=3)
-post6 = Post(title="test6", content="tester", user_id=3)
+post1 = Post(title="test1", content="tester", created_at="08/23/2023 @ 21:27:30", user_id=1)
+post2 = Post(title="test2", content="tester", created_at="08/23/2023 @ 21:27:30", user_id=1)
+post3 = Post(title="test3", content="tester", created_at="08/23/2023 @ 21:27:30", user_id=2)
+post4 = Post(title="test4", content="tester", created_at="08/23/2023 @ 21:27:30", user_id=2)
+post5 = Post(title="test5", content="tester", created_at="08/23/2023 @ 21:27:30", user_id=3)
+post6 = Post(title="test6", content="tester", created_at="08/23/2023 @ 21:27:30", user_id=3)
 
 db.session.add_all([post1,post2,post3,post4,post5,post6])
+db.session.commit()
+
+tag1 = Tag(name="funny")
+tag2 = Tag(name="cool")
+tag3 = Tag(name="sad")
+
+db.session.add_all([tag1,tag2,tag3])
 db.session.commit()
