@@ -4,7 +4,7 @@
     {% block content %}
     <title>Edit {{user.whole_name()}}</title>
 
-        <form  id="fill-out" action="/user-details/{{user.id}}" method="POST">
+        <form class="content" action="/user-details/{{user.id}}" method="POST">
             <h1>Edit {{user.whole_name()}}'s details</h1>
             
             <div class="form-group">

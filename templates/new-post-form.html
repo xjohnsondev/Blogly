@@ -2,7 +2,7 @@
 {% block title %}Add New Post{% endblock %}
 
     {% block content %}
-    <form id="fill-out" action="/new-post-form/{{user.id}}" method="POST">
+    <form class="content" action="/new-post-form/{{user.id}}" method="POST">
 
         <h2>Add New Post for {{user.whole_name()}}</h2>
 
